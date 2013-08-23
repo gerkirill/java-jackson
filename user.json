@@ -2,5 +2,13 @@
   "name" : { "first" : "Joe", "last" : "Sixpack" },
   "gender" : "MALE",
   "verified" : false,
-  "userImage" : "Rm9vYmFyIQ=="
+  "userImage" : "Rm9vYmFyIQ==",
+  "relatives" : [
+      {
+          "name" : { "first" : "Joan", "last" : "Sixpack" }
+      },
+      {
+          "name" : { "first" : "Hanna", "last" : "Sixpack" }
+      }
+  ]
 }

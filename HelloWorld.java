@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.Iterator;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -27,6 +29,16 @@ public class HelloWorld {
         }
         String firstName = root.get("name").get("first").asText().toUpperCase();
         System.out.println(firstName);
+
+        // iterating through the json array
+        System.out.println();
+        System.out.println("Relatives:");
+        JsonNode relatives = root.get("relatives");
+        Iterator<JsonNode> i = relatives.elements();
+        while(i.hasNext()) {
+            JsonNode relative = i.next();
+            System.out.println(relative.get("name").get("first").asText());
+        }
 
         //int age = root.get("age").asInt();
 //        Map<String,Map> userData = mapper.readValue(new File("user.json"), Map.class);
