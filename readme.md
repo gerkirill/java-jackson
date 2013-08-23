@@ -2,7 +2,8 @@
 
  - Libraries used: https://github.com/FasterXML
  - outdated examples (just in case): http://www.mkyong.com/java/how-to-convert-java-map-to-from-json-jackson/
- - Example data:
+ - Example json data:
+
         {
           "name" : { "first" : "Joe", "last" : "Sixpack" },
           "gender" : "MALE",
